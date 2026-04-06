@@ -5,45 +5,85 @@ layout: cover
 background: '#101010'
 ---
 
-# AI Workshop Starter
+<h1 class="de-hero-title">AI Workshop <br>Starter</h1>
 
-โครง deck สำหรับ session สอน ใช้ internal หรือใช้ขาย workshop ได้ทันที
+<div class="de-hero-subtitle">
+โครง deck สำหรับ session สอน ใช้ internal, ใช้ขาย workshop หรือปรับเป็น executive session ได้ทันที
+</div>
+
+<div class="de-hero-meta">
+  <div class="de-chip">🎓 Training</div>
+  <div class="de-chip">🧪 Hands-on</div>
+  <div class="de-chip">📌 Action Plan</div>
+</div>
 
 ---
 layout: section
 ---
 
-# Agenda
+# Session ที่ดีต้องพาคนจาก “รู้” ไปสู่ “ลอง” และ “ใช้จริง”
 
-สิ่งที่ผู้เข้าร่วมจะได้ ไม่ควรยาว แต่ควรชัด
-
----
-
-# Workshop Flow
-
-1. **Context setting** — ปัญหาคืออะไร
-2. **Core concept** — หลักคิดที่ต้องรู้
-3. **Hands-on demo** — ให้เห็นของจริง
-4. **Applied exercise** — ให้ลองกับ use case ตัวเอง
-5. **Action plan** — กลับไปทำต่อได้เลย
+ไม่ใช่แค่เล่า concept แต่ต้องทำให้คนฟังเห็นภาพว่าเอากลับไปใช้กับงานตัวเองอย่างไร
 
 ---
 
-# Tips สำหรับ deck แนวสอน
+<div class="de-slide-header">
+  <div class="de-slide-index">01 · Flow</div>
+  <div class="de-kicker">Workshop design</div>
+</div>
 
-- ใช้หนึ่งสไลด์ต่อหนึ่งประเด็น
-- ถ้ามีศัพท์เทคนิค ให้แปลไทยกำกับ
-- ใส่ตัวอย่างจริงให้เร็วที่สุด
-- จบแต่ละ section ด้วย “แล้วเอาไปใช้ยังไง”
+<div class="de-metric-grid">
+  <div class="de-metric">
+    <div class="label">Step 1</div>
+    <div class="value">Context</div>
+    <div>ตั้งต้นด้วยปัญหาหรือโอกาสที่ผู้เรียนอินทันที</div>
+  </div>
+  <div class="de-metric">
+    <div class="label">Step 2</div>
+    <div class="value">Demo</div>
+    <div>ให้เห็นของจริงเร็วที่สุด อย่าปล่อยให้ deck เป็นแค่ทฤษฎี</div>
+  </div>
+  <div class="de-metric">
+    <div class="label">Step 3</div>
+    <div class="value">Apply</div>
+    <div>จบด้วยโจทย์จริงและ action plan ที่เอาไปทำต่อได้</div>
+  </div>
+</div>
 
 ---
 
-# Suggested CTA
+<div class="de-slide-header">
+  <div class="de-slide-index">02 · Suggested agenda</div>
+  <div class="de-statement">หนึ่ง workshop ที่จบดี ควรมี flow แบบนี้</div>
+</div>
 
-<div class="de-metric mt-6">
+<div class="de-two-up">
+  <div class="de-list-card">
+    <ol>
+      <li><strong>Context setting</strong> — ปัญหาคืออะไร</li>
+      <li><strong>Core concept</strong> — หลักคิดที่ต้องรู้</li>
+      <li><strong>Hands-on demo</strong> — ให้เห็นของจริง</li>
+      <li><strong>Applied exercise</strong> — ลองกับ use case ตัวเอง</li>
+      <li><strong>Action plan</strong> — กลับไปทำต่อได้เลย</li>
+    </ol>
+  </div>
+  <div class="de-panel-dark">
+    <h2>Facilitator note</h2>
+    <p>ทุก section ควรมีคำถามเดียวที่ตอบชัดว่า “แล้วเอาไปใช้กับงานจริงยังไง”</p>
+  </div>
+</div>
+
+---
+
+<div class="de-slide-header">
+  <div class="de-slide-index">03 · CTA</div>
+  <div class="de-kicker">Outcome</div>
+</div>
+
+<div class="de-panel-dark">
   <div class="label">☕ Workshop Outcome</div>
-  <div class="value">จากรู้ → ลอง → ใช้จริง</div>
-  <div>ให้คนฟังรู้ว่าจบ session แล้วควรกลับไปทำอะไรต่อ</div>
+  <div class="value" style="font-size:2.6rem; margin-top:.8rem;">จากรู้ → ลอง → ใช้จริง</div>
+  <div style="margin-top:1rem; color:rgba(255,255,255,.8)">ให้คนฟังรู้ว่าจบ session แล้วควรกลับไปทำอะไรต่อทันที</div>
 </div>
 
 ---
