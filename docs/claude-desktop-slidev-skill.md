@@ -91,3 +91,8 @@ Return:
 3. full `decks/<slug>.md` content
 
 ---
+
+## Ending rule
+- Avoid salesy ending CTA.
+- Do not end the deck with service-selling language like "ถ้าต้องการ..."
+- Prefer a closing summary, key message, or practical takeaway.

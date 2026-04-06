@@ -107,3 +107,8 @@ Whenever asked to create a deck:
 - update `decks.json`
 - keep styling inside existing theme unless a shared upgrade is needed
 - preserve brand consistency across all decks
+
+## Ending rule
+- Avoid salesy ending CTA.
+- Do not end slides with phrases like "ถ้าต้องการ..." or service upsell language.
+- End with one of: concise summary, key takeaway, reflection, or practical next step for the learner.
