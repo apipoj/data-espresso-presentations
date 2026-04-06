@@ -16,5 +16,11 @@
     "title": "AI Workshop Starter",
     "description": "โครง deck สำหรับ workshop, training, และ executive session",
     "file": "decks/ai-workshop-starter.md"
+  },
+  {
+    "slug": "coding-for-marketers",
+    "title": "Coding for Marketers",
+    "description": "สรุปแนวคิดจาก Coding for Marketers: ใช้ Agentic AI tools ให้ marketer สร้างของได้จริง",
+    "file": "decks/coding-for-marketers.md"
   }
 ]
