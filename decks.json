@@ -1,0 +1,20 @@
+[
+  {
+    "slug": "ai-trends-2026",
+    "title": "AI Trends 2026",
+    "description": "ภาพรวมเทรนด์ AI ที่ส่งผลกับธุรกิจไทยในปี 2026",
+    "file": "decks/ai-trends-2026.md"
+  },
+  {
+    "slug": "customer-os",
+    "title": "Customer OS",
+    "description": "กรอบคิดและสถาปัตยกรรมสำหรับ Customer OS ที่ขายได้จริง",
+    "file": "decks/customer-os.md"
+  },
+  {
+    "slug": "ai-workshop-starter",
+    "title": "AI Workshop Starter",
+    "description": "โครง deck สำหรับ workshop, training, และ executive session",
+    "file": "decks/ai-workshop-starter.md"
+  }
+]

@@ -1,0 +1,14 @@
+{
+  "name": "data-espresso-presentations",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Multi-presentation Slidev workspace for Data-Espresso",
+  "scripts": {
+    "dev": "slidev decks/ai-trends-2026.md",
+    "build": "node scripts/build.mjs",
+    "build:single": "slidev build decks/ai-trends-2026.md --out dist/ai-trends-2026 --base /ai-trends-2026/ --without-notes"
+  },
+  "dependencies": {
+    "@slidev/cli": "^52.14.2"
+  }
+}

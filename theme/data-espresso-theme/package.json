@@ -1,0 +1,13 @@
+{
+  "name": "slidev-theme-data-espresso",
+  "version": "0.1.0",
+  "private": true,
+  "keywords": ["slidev-theme", "slidev", "data-espresso"],
+  "slidev": {
+    "colorSchema": "both",
+    "defaults": {
+      "layout": "default",
+      "transition": "slide-left"
+    }
+  }
+}
