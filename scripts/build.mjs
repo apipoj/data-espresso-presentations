@@ -1,4 +1,4 @@
-import { mkdir, readFile, writeFile, rm } from 'node:fs/promises'
+import { mkdir, readFile, writeFile, rm, cp } from 'node:fs/promises'
 import { dirname, join, resolve } from 'node:path'
 import { fileURLToPath } from 'node:url'
 import { spawn } from 'node:child_process'
@@ -6,16 +6,20 @@ import { spawn } from 'node:child_process'
 const __dirname = dirname(fileURLToPath(import.meta.url))
 const root = resolve(__dirname, '..')
 const distDir = join(root, 'dist')
+const tempDir = '/tmp/data-espresso-slidev-build'
 const decks = JSON.parse(await readFile(join(root, 'decks.json'), 'utf8'))
 
 await rm(distDir, { recursive: true, force: true })
+await rm(tempDir, { recursive: true, force: true })
 await mkdir(distDir, { recursive: true })
+await mkdir(tempDir, { recursive: true })
 
 for (const deck of decks) {
+  const tempOut = join(tempDir, deck.slug)
   await new Promise((resolvePromise, rejectPromise) => {
     const child = spawn('npm', [
       'exec', 'slidev', '--', 'build', deck.file,
-      '--out', join('dist', deck.slug),
+      '--out', tempOut,
       '--base', `/${deck.slug}/`,
       '--without-notes'
     ], {
@@ -28,6 +32,7 @@ for (const deck of decks) {
       else rejectPromise(new Error(`Build failed for ${deck.slug} with exit code ${code}`))
     })
   })
+  await cp(tempOut, join(distDir, deck.slug), { recursive: true })
 }
 
 const cards = decks.map(deck => `
@@ -203,4 +208,5 @@ const html = `<!doctype html>
 </html>`
 
 await writeFile(join(distDir, 'index.html'), html)
+await rm(tempDir, { recursive: true, force: true })
 console.log(`Built ${decks.length} presentations and homepage.`)
