@@ -59,15 +59,15 @@ layout: section
   <div class="de-statement">ทำไมเรื่องนี้สำคัญกับธุรกิจไทยตอนนี้</div>
 </div>
 
-<div class="de-soft-panel">
+<div class="de-table-card">
   <table>
     <thead>
       <tr><th>แรงกดดัน</th><th>ความหมายเชิงธุรกิจ</th></tr>
     </thead>
     <tbody>
       <tr><td>ต้นทุนคนสูงขึ้น</td><td>ต้องใช้ AI ช่วยยก productivity ต่อหัว ไม่ใช่เพิ่มคนอย่างเดียว</td></tr>
-      <tr><td>คู่แข่ง deploy เร็วขึ้น</td><td>คนที่เริ่มทดลองและเรียนรู้เร็ว จะได้ execution advantage</td></tr>
-      <tr><td>ลูกค้าคาดหวังมากขึ้น</td><td>ประสบการณ์ต้องเร็ว ฉลาด และต่อเนื่อง across channels</td></tr>
+      <tr><td>คู่แข่ง deploy เร็วขึ้น</td><td>คนที่เริ่มทดลองและเรียนรู้เร็ว จะได้ execution advantage ก่อนตลาด</td></tr>
+      <tr><td>ลูกค้าคาดหวังมากขึ้น</td><td>ประสบการณ์ต้องเร็ว ฉลาด และต่อเนื่อง across channels ไม่ใช่แค่ตอบได้เป็นบางจุด</td></tr>
     </tbody>
   </table>
 </div>

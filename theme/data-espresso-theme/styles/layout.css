@@ -383,3 +383,66 @@ html, body, #slidev {
     width: 15rem;
   }
 }
+
+
+.de-table-card {
+  background: linear-gradient(135deg, rgba(255,255,255,0.98), rgba(245,240,248,0.92));
+  border: 1px solid rgba(48, 30, 69, 0.08);
+  border-radius: 28px;
+  padding: 0.8rem;
+  box-shadow: 0 22px 60px rgba(48, 30, 69, 0.10);
+}
+
+.de-table-card table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  background: white;
+  border-radius: 22px;
+  overflow: hidden;
+  box-shadow: none;
+}
+
+.de-table-card thead th {
+  padding: 1rem 1.1rem;
+  text-align: left;
+  font-size: 0.92rem;
+  letter-spacing: 0.04em;
+}
+
+.de-table-card tbody td {
+  padding: 1rem 1.1rem;
+  vertical-align: top;
+  border-bottom: 1px solid rgba(48, 30, 69, 0.08);
+}
+
+.de-table-card tbody tr:last-child td {
+  border-bottom: 0;
+}
+
+.de-table-card tbody td:first-child {
+  width: 28%;
+  font-weight: 700;
+  color: var(--de-russian-violet);
+}
+
+.de-panel-dark h1,
+.de-panel-dark h2,
+.de-panel-dark h3,
+.de-panel-dark h4 {
+  background: none !important;
+  -webkit-background-clip: initial !important;
+  background-clip: initial !important;
+  color: white !important;
+  text-shadow: none;
+}
+
+.de-panel-dark p,
+.de-panel-dark li,
+.de-panel-dark strong {
+  color: rgba(255,255,255,0.88) !important;
+}
+
+.de-panel-dark li::marker {
+  color: var(--de-copper-light);
+}
