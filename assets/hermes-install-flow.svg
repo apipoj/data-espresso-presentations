@@ -22,12 +22,12 @@
   </style>
 </defs>
 <rect width="1200" height="675" rx="36" fill="#ffffff"/>
-<text x="70" y="88" class="label" style="font-size:44px">Install flow ที่สอนแล้วคนทำตามได้</text>
+<text x="70" y="88" class="label" style="font-size:44px">Install flow แบบ Arty: ทำแล้วต้องมี proof</text>
 <g transform="translate(70 170)">
-  <g><circle cx="70" cy="70" r="58" fill="url(#accent)"/><text x="48" y="84" class="title" style="font-size:42px">1</text><text x="0" y="170" class="label">Install</text><text x="0" y="205" class="muted">curl one-liner</text></g>
-  <g transform="translate(260 0)"><circle cx="70" cy="70" r="58" fill="#301e45"/><text x="48" y="84" class="title" style="font-size:42px">2</text><text x="0" y="170" class="label">Setup</text><text x="0" y="205" class="muted">provider + model</text></g>
-  <g transform="translate(520 0)"><circle cx="70" cy="70" r="58" fill="#18222d"/><text x="48" y="84" class="title" style="font-size:42px">3</text><text x="0" y="170" class="label">Tools</text><text x="0" y="205" class="muted">web, terminal, file</text></g>
-  <g transform="translate(780 0)"><circle cx="70" cy="70" r="58" fill="#c81559"/><text x="48" y="84" class="title" style="font-size:42px">4</text><text x="0" y="170" class="label">Verify</text><text x="0" y="205" class="muted">doctor + smoke test</text></g>
+  <g><circle cx="70" cy="70" r="58" fill="url(#accent)"/><text x="48" y="84" class="title" style="font-size:42px">1</text><text x="0" y="170" class="label">Install</text><text x="0" y="205" class="muted">official installer</text></g>
+  <g transform="translate(260 0)"><circle cx="70" cy="70" r="58" fill="#301e45"/><text x="48" y="84" class="title" style="font-size:42px">2</text><text x="0" y="170" class="label">Setup</text><text x="0" y="205" class="muted">เลือกให้เหมาะงาน</text></g>
+  <g transform="translate(520 0)"><circle cx="70" cy="70" r="58" fill="#18222d"/><text x="48" y="84" class="title" style="font-size:42px">3</text><text x="0" y="170" class="label">Tools</text><text x="0" y="205" class="muted">เปิดเท่าที่ใช้จริง</text></g>
+  <g transform="translate(780 0)"><circle cx="70" cy="70" r="58" fill="#c81559"/><text x="48" y="84" class="title" style="font-size:42px">4</text><text x="0" y="170" class="label">Verify</text><text x="0" y="205" class="muted">มีหลักฐานก่อนจบ</text></g>
   <g stroke="#dac3da" stroke-width="9" stroke-linecap="round"><path d="M140 70h175"/><path d="M400 70h175"/><path d="M660 70h175"/></g>
 </g>
 <rect x="88" y="455" width="1024" height="130" rx="28" fill="#18222d" stroke="#b67b25" stroke-width="3"/>

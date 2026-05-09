@@ -1,7 +1,7 @@
 ---
 theme: ../theme/data-espresso-theme
-title: "ติดตั้ง Hermes Agent ให้พร้อมใช้งานจริง"
-info: "Workshop deck สอนติดตั้ง Hermes Agent: CLI, provider, tools, memory, skills, gateway, verification"
+title: "ติดตั้ง Hermes Agent แบบใช้สอนและใช้จริง"
+info: "Workshop deck สอนติดตั้ง Hermes Agent ด้วย Arty voice: CLI, provider, tools, memory, skills, gateway, verification"
 layout: cover
 background: '#101010'
 ---
@@ -14,7 +14,7 @@ layout: section
 
 # เป้าหมายของ session
 
-จากเครื่องเปล่า → Hermes ที่คุยได้, ใช้ tools ได้, และต่อ messaging platform ได้
+ไม่ใช่แค่ติดตั้งให้ผ่าน แต่ทำให้ทุกคนมี Hermes ที่พิสูจน์ได้ว่าใช้งานจริง
 
 ---
 
@@ -25,18 +25,18 @@ layout: section
 
 <div class="de-two-up">
   <div class="de-list-card">
-    <h2>หลังจบควรทำได้</h2>
+    <h2>หลังจบต้องทำได้จริง</h2>
     <ul>
-      <li>ติดตั้ง Hermes บน macOS, Linux, หรือ WSL2</li>
-      <li>ตั้งค่า provider/model ผ่าน <code>hermes setup</code></li>
-      <li>เปิดใช้ tools ที่จำเป็นกับงานจริง</li>
-      <li>ตรวจสุขภาพด้วย <code>hermes doctor</code></li>
-      <li>ต่อ gateway ไป Telegram/Discord/Slack ได้</li>
+      <li>ติดตั้ง Hermes บน macOS, Linux, หรือ WSL2 ได้เอง</li>
+      <li>ตั้งค่า provider/model ผ่าน <code>hermes setup</code> โดยไม่เดา</li>
+      <li>เปิด tools ที่จำเป็นกับ workflow จริง ไม่เปิดมั่ว</li>
+      <li>ใช้ <code>hermes doctor</code> อ่านปัญหาเป็น</li>
+      <li>ต่อ Telegram/Discord/Slack แล้วให้ agent ทำงานใน channel ได้</li>
     </ul>
   </div>
   <div class="de-panel-dark">
-    <h2>Production habit</h2>
-    <p>ทุกขั้นควรจบด้วย proof: install, configure, verify, แล้วค่อย operate ใน channel ที่ทีมใช้จริง.</p>
+    <h2>Arty rule</h2>
+    <p>อย่าสอนให้จำ command อย่างเดียวครับ สอนให้ทุก step มี proof: install → configure → verify → ค่อยเอาไปใช้ในงานจริง.</p>
   </div>
 </div>
 
@@ -60,10 +60,10 @@ layout: section
   <table>
     <thead><tr><th>สิ่งที่ต้องมี</th><th>ทำไมต้องมี</th><th>เช็กเร็ว</th></tr></thead>
     <tbody>
-      <tr><td>macOS, Linux, WSL2</td><td>Hermes รันใน terminal environment</td><td><code>uname -a</code></td></tr>
-      <tr><td>Git + shell</td><td>installer ต้อง clone/update และแก้ shell rc</td><td><code>git --version</code></td></tr>
-      <tr><td>LLM account/key</td><td>ต้องมี provider ให้ Hermes คิดและเรียก tools</td><td>OpenRouter, Codex, Nous, Anthropic</td></tr>
-      <tr><td>Messaging bot token</td><td>ใช้เฉพาะตอนเปิด gateway</td><td>Telegram BotFather หรือ Discord Portal</td></tr>
+      <tr><td>macOS, Linux, WSL2</td><td>ต้องมี terminal ที่ Hermes รันได้จริง</td><td><code>uname -a</code></td></tr>
+      <tr><td>Git + shell</td><td>installer ต้อง clone/update และผูก PATH</td><td><code>git --version</code></td></tr>
+      <tr><td>LLM account/key</td><td>ไม่มี model ก็เหมือนมีรถแต่ไม่มีน้ำมัน</td><td>OpenRouter, Codex, Nous, Anthropic</td></tr>
+      <tr><td>Messaging bot token</td><td>ค่อยใช้ตอนจะพา agent เข้าทีมจริง</td><td>Telegram BotFather หรือ Discord Portal</td></tr>
     </tbody>
   </table>
 </div>
@@ -86,7 +86,7 @@ layout: section
 
 <div class="de-two-up de-command-slide">
   <div class="de-list-card">
-    <h2>คำสั่งหลัก</h2>
+    <h2>คำสั่งหลักที่ต้องกล้ารัน</h2>
 
 ```bash
 BASE="https://raw.githubusercontent.com"
@@ -96,11 +96,11 @@ curl -fsSL "$BASE/$REPO/main/scripts/install.sh" | bash
 
   </div>
   <div class="de-panel-dark">
-    <h2>จุดที่ต้องอธิบาย</h2>
+    <h2>อย่าให้ผู้เรียน copy แบบหลับตา</h2>
     <ul>
-      <li>โหลด installer จาก GitHub official repo</li>
-      <li>ติดตั้ง Hermes CLI + dependency ที่จำเป็น</li>
-      <li>reload shell ก่อนเรียก <code>hermes</code></li>
+      <li>ชี้ให้เห็นว่าโหลดจาก GitHub official repo</li>
+      <li>อธิบายว่า installer วาง CLI + dependency ให้</li>
+      <li>จบด้วย reload shell แล้วเช็ก <code>hermes --version</code></li>
     </ul>
   </div>
 </div>
@@ -125,11 +125,11 @@ hermes --version
 
   </div>
   <div class="de-list-card">
-    <h2>ถ้า command not found</h2>
+    <h2>ถ้า command not found อย่า panic</h2>
     <ul>
-      <li>ปิด terminal แล้วเปิดใหม่</li>
+      <li>ปิด terminal แล้วเปิดใหม่ก่อน ง่ายสุด</li>
       <li>เช็กว่า installer เพิ่ม PATH ใน shell rc แล้วหรือยัง</li>
-      <li>รัน <code>which hermes</code> เพื่อดูตำแหน่ง binary</li>
+      <li>รัน <code>which hermes</code> เพื่อดูว่าเครื่องหา binary เจอไหม</li>
     </ul>
   </div>
 </div>
@@ -140,7 +140,7 @@ layout: section
 
 # ตั้งค่า Hermes ครั้งแรก
 
-Provider, model, tools, และ config ที่ต้องรู้ก่อนใช้งานจริง
+จุดนี้คือเปลี่ยนจาก “ลงโปรแกรมแล้ว” เป็น “agent เริ่มทำงานได้จริง”
 
 ---
 
@@ -151,7 +151,7 @@ Provider, model, tools, และ config ที่ต้องรู้ก่อ
 
 <div class="de-two-up">
   <div class="de-list-card">
-    <h2>เริ่มจาก wizard</h2>
+    <h2>เริ่มจาก wizard ไม่ต้องเก่ง config</h2>
 
 ```bash
 hermes setup
@@ -161,12 +161,12 @@ hermes config
 
   </div>
   <div class="de-panel-dark">
-    <h2>สิ่งที่ wizard ช่วยถาม</h2>
+    <h2>สิ่งที่ wizard ช่วยเคลียร์</h2>
     <ul>
-      <li>จะใช้ provider ไหน</li>
-      <li>model default คืออะไร</li>
-      <li>เปิด terminal/tool execution แบบไหน</li>
-      <li>gateway หรือ voice ต้องเปิดไหม</li>
+      <li>จะใช้ provider ไหน และจ่ายเงิน/ล็อกอินตรงไหน</li>
+      <li>model default ควรเป็นตัวไหนสำหรับงานเรา</li>
+      <li>จะให้ agent แตะ terminal/tools ได้แค่ไหน</li>
+      <li>gateway หรือ voice จำเป็นตอนนี้ไหม หรือไว้ทีหลัง</li>
     </ul>
   </div>
 </div>
@@ -182,10 +182,10 @@ hermes config
   <table>
     <thead><tr><th>Provider</th><th>เหมาะกับ</th><th>หมายเหตุ</th></tr></thead>
     <tbody>
-      <tr><td>OpenAI Codex</td><td>coding, repo work, CLI agent workflow</td><td>ใช้ OAuth login ได้</td></tr>
-      <tr><td>OpenRouter</td><td>เลือก model ได้หลากหลาย</td><td>ต้องมี API key</td></tr>
-      <tr><td>Nous Portal</td><td>ใช้งานกับ ecosystem ของ Nous</td><td>เหมาะกับทดลอง Hermes native</td></tr>
-      <tr><td>Custom endpoint</td><td>องค์กรที่มี model gateway เอง</td><td>ต้องตั้ง base URL/key ให้ถูก</td></tr>
+      <tr><td>OpenAI Codex</td><td>งาน coding, repo, review</td><td>เหมาะถ้าทีมใช้ CLI agent หนัก</td></tr>
+      <tr><td>OpenRouter</td><td>อยากเลือก model หลายค่าย</td><td>ดีสำหรับทดลองและเทียบ cost/quality</td></tr>
+      <tr><td>Nous Portal</td><td>ใช้งานกับ ecosystem ของ Nous</td><td>เหมาะกับลอง Hermes แบบ native</td></tr>
+      <tr><td>Custom endpoint</td><td>องค์กรมี model gateway เอง</td><td>ต้องเป๊ะเรื่อง base URL/key ไม่งั้นพังเงียบ</td></tr>
     </tbody>
   </table>
 </div>
@@ -208,11 +208,11 @@ hermes config env-path
 
   </div>
   <div class="de-list-card">
-    <h2>สอน security habit</h2>
+    <h2>Security habit ที่ต้องย้ำ</h2>
     <ul>
       <li>API keys อยู่ใน <code>~/.hermes/.env</code></li>
       <li>config อยู่ใน <code>~/.hermes/config.yaml</code></li>
-      <li>อย่า paste secret ลง slide, repo, หรือ group chat</li>
+      <li>secret ไม่ใช่ของโชว์ครับ ห้าม paste ลง slide, repo, หรือ group chat</li>
     </ul>
   </div>
 </div>
@@ -226,8 +226,8 @@ hermes config env-path
 
 <div class="de-metric-grid">
   <div class="de-metric"><div class="label">Core</div><div class="value">terminal + file</div><div>ให้ agent อ่านไฟล์ แก้ไฟล์ รัน test และ build ได้</div></div>
-  <div class="de-metric"><div class="label">Research</div><div class="value">web + browser</div><div>ค้นเว็บ เปิดหน้าเว็บ และเก็บ evidence ได้</div></div>
-  <div class="de-metric"><div class="label">Ops</div><div class="value">cron + send</div><div>ตั้งงานอัตโนมัติและส่งกลับ platform ได้</div></div>
+  <div class="de-metric"><div class="label">Research</div><div class="value">web + browser</div><div>ค้นข้อมูล เปิดเว็บ และเก็บ evidence แทนการเดา</div></div>
+  <div class="de-metric"><div class="label">Ops</div><div class="value">cron + send</div><div>ตั้งงานอัตโนมัติ แล้วส่งผลกลับมาหาเรา</div></div>
 </div>
 
 ---
@@ -251,7 +251,7 @@ hermes tools disable homeassistant
   </div>
   <div class="de-panel-dark">
     <h2>Rule of thumb</h2>
-    <p>เปิด tools เท่าที่ workflow ต้องใช้จริง ยิ่ง agent อยู่ใน group chat ยิ่งต้องระวัง tools ที่มี side effect เช่น email, social, home control.</p>
+    <p>เปิด tools เท่าที่ workflow ต้องใช้จริงพอครับ ยิ่ง agent อยู่ใน group chat ยิ่งต้องระวัง tools ที่มี side effect เช่น email, social, home control.</p>
   </div>
 </div>
 
@@ -264,7 +264,7 @@ hermes tools disable homeassistant
 
 <div class="de-two-up">
   <div class="de-list-card">
-    <h2>Memory จำเรื่องคนและ environment</h2>
+    <h2>Memory จำ “บริบท”</h2>
     <ul>
       <li>ชื่อ, timezone, preference</li>
       <li>project conventions ที่ใช้ซ้ำ</li>
@@ -272,7 +272,7 @@ hermes tools disable homeassistant
     </ul>
   </div>
   <div class="de-panel-dark">
-    <h2>Skills จำวิธีทำงาน</h2>
+    <h2>Skills จำ “วิธีทำงาน”</h2>
     <ul>
       <li>ขั้นตอน deploy</li>
       <li>workflow debug</li>
@@ -287,7 +287,7 @@ layout: section
 
 # เปิด Messaging Gateway
 
-ทำให้ Hermes ตอบและทำงานจาก Telegram, Discord, Slack หรือ platform อื่นได้
+นี่คือจุดที่ Hermes ไม่ได้อยู่แค่ใน terminal แต่เริ่มเป็นเพื่อนร่วมทีมใน channel จริง
 
 ---
 
@@ -318,9 +318,9 @@ hermes gateway status
   <div class="de-list-card">
     <h2>แนะนำให้เริ่มแบบนี้</h2>
     <ul>
-      <li>run foreground ก่อน เพื่อเห็น log</li>
-      <li>ทดสอบ mention/message จาก platform</li>
-      <li>ค่อย install เป็น background service</li>
+      <li>run foreground ก่อน จะได้เห็น log ตอนพัง</li>
+      <li>ทดสอบ mention/message จาก platform จริง</li>
+      <li>ค่อย install เป็น background service เมื่อมั่นใจแล้ว</li>
     </ul>
   </div>
 </div>
@@ -336,10 +336,10 @@ hermes gateway status
   <table>
     <thead><tr><th>Step</th><th>Action</th><th>Evidence</th></tr></thead>
     <tbody>
-      <tr><td>1</td><td>สร้าง bot ผ่าน BotFather</td><td>ได้ bot token</td></tr>
+      <tr><td>1</td><td>สร้าง bot ผ่าน BotFather</td><td>ได้ bot token เก็บให้ปลอดภัย</td></tr>
       <tr><td>2</td><td>ใส่ token ใน gateway setup</td><td>config/env ถูก update</td></tr>
-      <tr><td>3</td><td>เพิ่ม bot เข้า chat หรือ group</td><td>bot เห็นข้อความ</td></tr>
-      <tr><td>4</td><td>ลองถามแบบสั้น</td><td>Hermes ตอบกลับพร้อมใช้ tools</td></tr>
+      <tr><td>3</td><td>เพิ่ม bot เข้า chat หรือ group</td><td>bot เห็นข้อความจริง</td></tr>
+      <tr><td>4</td><td>ลองถามแบบสั้นและดู log</td><td>Hermes ตอบกลับพร้อมใช้ tools</td></tr>
     </tbody>
   </table>
 </div>
@@ -357,12 +357,12 @@ hermes gateway status
     <ul>
       <li>ถ้าไม่ได้ resolve username ไม่ควรเปิด privileged Members intent</li>
       <li>ตั้ง <code>require_mention: true</code> ใน server/group ที่ bot เห็นทุก message</li>
-      <li>ตรวจ log ถ้า bot online แต่ไม่ตอบ</li>
+      <li>ถ้า bot online แต่ไม่ตอบ อย่าเดา เปิด log ก่อน</li>
     </ul>
   </div>
   <div class="de-panel-dark">
     <h2>Good default</h2>
-    <p>เริ่มจากให้ Hermes ตอบเมื่อถูก mention ก่อน แล้วค่อย whitelist channel ที่ต้องการให้ free response.</p>
+    <p>เริ่มจากให้ Hermes ตอบเมื่อถูก mention ก่อนครับ แล้วค่อย whitelist channel ที่ต้องการให้ free response จริง ๆ.</p>
   </div>
 </div>
 
@@ -372,7 +372,7 @@ layout: section
 
 # Verification และ troubleshooting
 
-อย่าจบด้วยความรู้สึกว่าติดตั้งแล้ว ให้จบด้วยหลักฐานว่าใช้งานได้จริง
+อย่าจบด้วยคำว่า “น่าจะได้” ให้จบด้วยหลักฐานว่า agent ทำงานได้จริง
 
 ---
 
@@ -402,11 +402,11 @@ hermes tools list
 
   </div>
   <div class="de-list-card">
-    <h2>ตีความผลลัพธ์</h2>
+    <h2>ตีความผลลัพธ์แบบคนทำงานจริง</h2>
     <ul>
       <li>doctor บอก dependency/config ที่ยังขาด</li>
-      <li>status ช่วยดู gateway/service</li>
-      <li>chat smoke test ยืนยัน provider ใช้งานได้</li>
+      <li>status ช่วยดู gateway/service ว่ายังหายใจอยู่ไหม</li>
+      <li>chat smoke test ยืนยันว่า provider ใช้งานได้ ไม่ใช่แค่ตั้งค่าไว้สวย ๆ</li>
     </ul>
   </div>
 </div>
@@ -424,7 +424,7 @@ hermes tools list
     <tbody>
       <tr><td><code>hermes</code> not found</td><td>PATH ยังไม่ reload</td><td><code>source ~/.zshrc</code> หรือเปิด terminal ใหม่</td></tr>
       <tr><td>model call fail</td><td>key/login ไม่พร้อม</td><td><code>hermes login</code>, เช็ก <code>.env</code></td></tr>
-      <tr><td>tool ไม่ขึ้น</td><td>toolset ปิดอยู่หรือ missing env</td><td><code>hermes tools list</code></td></tr>
+      <tr><td>tool ไม่ขึ้น</td><td>toolset ปิดอยู่หรือ missing env</td><td><code>hermes tools list</code> ก่อนเดา</td></tr>
       <tr><td>gateway ไม่ตอบ</td><td>token/permission/mention rule</td><td>ดู <code>~/.hermes/logs/gateway.log</code></td></tr>
     </tbody>
   </table>
@@ -438,9 +438,9 @@ hermes tools list
 </div>
 
 <div class="de-metric-grid">
-  <div class="de-metric"><div class="label">Weekly</div><div class="value">update</div><div>เช็ก <code>hermes update</code> เมื่อมี feature หรือ bugfix ที่ต้องใช้</div></div>
-  <div class="de-metric"><div class="label">Every change</div><div class="value">backup</div><div>ก่อนแก้ config สำคัญ ให้เก็บ diff หรือ backup config</div></div>
-  <div class="de-metric"><div class="label">Always</div><div class="value">logs</div><div>เวลาพัง ให้เริ่มจาก logs และ doctor ไม่เดาเอาเอง</div></div>
+  <div class="de-metric"><div class="label">Weekly</div><div class="value">update</div><div>เช็ก <code>hermes update</code> เมื่อมี feature หรือ bugfix ที่ต้องใช้จริง</div></div>
+  <div class="de-metric"><div class="label">Every change</div><div class="value">backup</div><div>ก่อนแก้ config สำคัญ เก็บ diff หรือ backup ไว้ก่อน</div></div>
+  <div class="de-metric"><div class="label">Always</div><div class="value">logs</div><div>เวลาพัง เริ่มจาก logs และ doctor ไม่เดาเอาเองครับ</div></div>
 </div>
 
 ---
@@ -449,7 +449,7 @@ layout: section
 
 # Workshop exercise
 
-ให้ผู้เรียนติดตั้งและส่งหลักฐานกลับมา ไม่ใช่แค่ดู demo
+ให้ผู้เรียนลงมือทำและส่ง proof กลับมา ไม่ใช่นั่งดู demo แล้วพยักหน้า
 
 ---
 
@@ -462,10 +462,10 @@ layout: section
   <table>
     <thead><tr><th>เวลา</th><th>กิจกรรม</th><th>Output</th></tr></thead>
     <tbody>
-      <tr><td>0-5 นาที</td><td>เช็ก OS, shell, git</td><td>พร้อมติดตั้ง</td></tr>
+      <tr><td>0-5 นาที</td><td>เช็ก OS, shell, git</td><td>รู้ว่าเครื่องพร้อมหรือยัง</td></tr>
       <tr><td>5-12 นาที</td><td>รัน installer และ reload shell</td><td><code>hermes --version</code></td></tr>
       <tr><td>12-22 นาที</td><td>ตั้ง provider/model</td><td><code>hermes chat -q</code> ผ่าน</td></tr>
-      <tr><td>22-30 นาที</td><td>เปิด toolset + doctor</td><td>screenshot หรือ paste proof</td></tr>
+      <tr><td>22-30 นาที</td><td>เปิด toolset + doctor</td><td>screenshot หรือ paste proof แบบไม่โชว์ secret</td></tr>
     </tbody>
   </table>
 </div>
@@ -479,7 +479,7 @@ layout: section
 
 <div class="de-two-up">
   <div class="de-list-card">
-    <h2>ขอหลักฐาน 4 อย่าง</h2>
+    <h2>ขอ proof 4 อย่าง</h2>
     <ul>
       <li><code>hermes --version</code></li>
       <li><code>hermes doctor</code> จุดสำคัญผ่าน</li>
@@ -489,7 +489,7 @@ layout: section
   </div>
   <div class="de-panel-dark">
     <h2>Safe proof</h2>
-    <p>เวลา verify ให้แชร์เฉพาะ command output ที่ไม่เปิดเผย secret ห้ามโชว์ API key หรือ config ทั้งไฟล์.</p>
+    <p>เวลา verify ให้แชร์เฉพาะ output ที่ไม่เปิดเผย secret ครับ ห้ามโชว์ API key หรือ config ทั้งไฟล์เด็ดขาด.</p>
   </div>
 </div>
 
@@ -512,7 +512,7 @@ layout: section
   </div>
   <div class="de-panel-dark">
     <h2>Why static</h2>
-    <p>ปลอดภัยกว่า dev/editor mode เพราะไม่มี write endpoint เปิด public และเหมาะกับการแชร์ slide ให้ทีม/ลูกค้า.</p>
+    <p>สำหรับ slide ที่ใช้สอนหรือส่งลูกค้า static mode ปลอดภัยกว่า dev/editor mode เพราะไม่มี write endpoint เปิด public.</p>
   </div>
 </div>
 
@@ -522,7 +522,7 @@ layout: end
 
 # Key takeaway
 
-ติดตั้ง Hermes ให้สำเร็จไม่ใช่แค่มี command <code>hermes</code> แต่ต้องมี proof ว่า agent คิดได้, ใช้ tools ได้, และอยู่ใน channel ที่ทีมใช้งานจริงได้อย่างปลอดภัย
+ติดตั้ง Hermes สำเร็จ ไม่ใช่แค่พิมพ์ <code>hermes</code> แล้วขึ้นครับ ต้องมี proof ว่า agent คิดได้, ใช้ tools ได้, และอยู่ใน channel ที่ทีมใช้งานจริงได้อย่างปลอดภัย
 
 <div class="de-hero-meta">
   <div class="de-chip">Install</div>

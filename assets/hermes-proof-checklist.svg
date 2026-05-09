@@ -22,14 +22,14 @@
   </style>
 </defs>
 <rect width="1200" height="675" rx="36" fill="#ffffff"/>
-<text x="70" y="88" class="label" style="font-size:44px">Proof-first checklist ก่อนบอกว่าติดตั้งเสร็จ</text>
+<text x="70" y="88" class="label" style="font-size:44px">Proof-first checklist: อย่าจบด้วยคำว่า “น่าจะได้”</text>
 <g transform="translate(95 150)">
   <rect width="1010" height="430" rx="34" fill="#f5f0f8" stroke="#ede5f0"/>
   <g transform="translate(60 60)">
-    <g><circle cx="26" cy="26" r="24" fill="url(#accent)"/><path d="M15 27l8 8 18-21" stroke="#fff" stroke-width="6" fill="none" stroke-linecap="round" stroke-linejoin="round"/><text x="70" y="35" class="label">hermes --version เห็น version</text></g>
-    <g transform="translate(0 85)"><circle cx="26" cy="26" r="24" fill="url(#accent)"/><path d="M15 27l8 8 18-21" stroke="#fff" stroke-width="6" fill="none" stroke-linecap="round" stroke-linejoin="round"/><text x="70" y="35" class="label">hermes doctor ผ่านจุดสำคัญ</text></g>
-    <g transform="translate(0 170)"><circle cx="26" cy="26" r="24" fill="url(#accent)"/><path d="M15 27l8 8 18-21" stroke="#fff" stroke-width="6" fill="none" stroke-linecap="round" stroke-linejoin="round"/><text x="70" y="35" class="label">hermes chat -q ตอบได้จริง</text></g>
-    <g transform="translate(0 255)"><circle cx="26" cy="26" r="24" fill="url(#accent)"/><path d="M15 27l8 8 18-21" stroke="#fff" stroke-width="6" fill="none" stroke-linecap="round" stroke-linejoin="round"/><text x="70" y="35" class="label">gateway status หรือ test message ผ่าน</text></g>
+    <g><circle cx="26" cy="26" r="24" fill="url(#accent)"/><path d="M15 27l8 8 18-21" stroke="#fff" stroke-width="6" fill="none" stroke-linecap="round" stroke-linejoin="round"/><text x="70" y="35" class="label">hermes --version เห็น version จริง</text></g>
+    <g transform="translate(0 85)"><circle cx="26" cy="26" r="24" fill="url(#accent)"/><path d="M15 27l8 8 18-21" stroke="#fff" stroke-width="6" fill="none" stroke-linecap="round" stroke-linejoin="round"/><text x="70" y="35" class="label">hermes doctor ผ่านจุดสำคัญจริง</text></g>
+    <g transform="translate(0 170)"><circle cx="26" cy="26" r="24" fill="url(#accent)"/><path d="M15 27l8 8 18-21" stroke="#fff" stroke-width="6" fill="none" stroke-linecap="round" stroke-linejoin="round"/><text x="70" y="35" class="label">hermes chat -q ตอบได้ ไม่ใช่แค่ตั้งค่าไว้</text></g>
+    <g transform="translate(0 255)"><circle cx="26" cy="26" r="24" fill="url(#accent)"/><path d="M15 27l8 8 18-21" stroke="#fff" stroke-width="6" fill="none" stroke-linecap="round" stroke-linejoin="round"/><text x="70" y="35" class="label">gateway status/test message ผ่านแบบไม่โชว์ secret</text></g>
   </g>
 </g>
 </svg>

@@ -39,9 +39,9 @@
 </g>
 <text x="88" y="180" class="title">Hermes Agent</text>
 <text x="88" y="244" class="title">Install Workshop</text>
-<text x="92" y="304" class="sub">ติดตั้ง, ตั้งค่า model, เปิด tools</text>
-<text x="92" y="344" class="sub">ต่อ Telegram/Discord และ verify</text>
-<text x="92" y="384" class="sub">ให้พร้อมใช้งานจริงใน 30 นาที</text>
+<text x="92" y="304" class="sub">ลงมือทำทีละ step ไม่จำ command มั่ว</text>
+<text x="92" y="344" class="sub">ตั้ง model, เปิด tools, ต่อ gateway</text>
+<text x="92" y="384" class="sub">จบด้วย proof ว่าใช้ได้จริง</text>
 <rect x="92" y="430" width="455" height="66" rx="33" fill="rgba(255,255,255,0.12)" stroke="rgba(255,255,255,0.22)" stroke-width="2"/>
-<text x="122" y="472" class="small">Data-Espresso practical AI deck</text>
+<text x="122" y="472" class="small">Arty practical AI workshop deck</text>
 </svg>
