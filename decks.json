@@ -22,5 +22,11 @@
     "title": "Coding for Marketers",
     "description": "สรุปแนวคิดจาก Coding for Marketers: ใช้ Agentic AI tools ให้ marketer สร้างของได้จริง",
     "file": "decks/coding-for-marketers.md"
+  },
+  {
+    "slug": "hermes-install-workshop",
+    "title": "ติดตั้ง Hermes Agent ให้พร้อมใช้งานจริง",
+    "description": "Workshop deck สอนติดตั้ง Hermes Agent ตั้งแต่ CLI, provider, tools, memory, skills, gateway จนถึง verification",
+    "file": "decks/hermes-install-workshop.md"
   }
 ]

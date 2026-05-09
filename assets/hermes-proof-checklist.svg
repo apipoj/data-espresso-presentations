@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img" aria-label="Hermes verification checklist">
+<defs>
+  <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+    <stop offset="0%" stop-color="#301e45"/>
+    <stop offset="55%" stop-color="#18222d"/>
+    <stop offset="100%" stop-color="#0f1720"/>
+  </linearGradient>
+  <linearGradient id="accent" x1="0" x2="1" y1="0" y2="1">
+    <stop offset="0%" stop-color="#b67b25"/>
+    <stop offset="100%" stop-color="#c81559"/>
+  </linearGradient>
+  <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+    <feDropShadow dx="0" dy="18" stdDeviation="18" flood-color="#000" flood-opacity="0.28"/>
+  </filter>
+  <style>
+    .title{font:800 54px 'Noto Sans Thai',Arial,sans-serif;fill:#fff}
+    .sub{font:500 24px 'Noto Sans Thai',Arial,sans-serif;fill:#dac3da}
+    .small{font:600 20px 'Noto Sans Thai',Arial,sans-serif;fill:#f7efe0}
+    .mono{font:600 21px ui-monospace,SFMono-Regular,Menlo,monospace;fill:#f8fafc}
+    .label{font:800 22px 'Noto Sans Thai',Arial,sans-serif;fill:#301e45}
+    .muted{font:500 17px 'Noto Sans Thai',Arial,sans-serif;fill:#64748b}
+  </style>
+</defs>
+<rect width="1200" height="675" rx="36" fill="#ffffff"/>
+<text x="70" y="88" class="label" style="font-size:44px">Proof-first checklist ก่อนบอกว่าติดตั้งเสร็จ</text>
+<g transform="translate(95 150)">
+  <rect width="1010" height="430" rx="34" fill="#f5f0f8" stroke="#ede5f0"/>
+  <g transform="translate(60 60)">
+    <g><circle cx="26" cy="26" r="24" fill="url(#accent)"/><path d="M15 27l8 8 18-21" stroke="#fff" stroke-width="6" fill="none" stroke-linecap="round" stroke-linejoin="round"/><text x="70" y="35" class="label">hermes --version เห็น version</text></g>
+    <g transform="translate(0 85)"><circle cx="26" cy="26" r="24" fill="url(#accent)"/><path d="M15 27l8 8 18-21" stroke="#fff" stroke-width="6" fill="none" stroke-linecap="round" stroke-linejoin="round"/><text x="70" y="35" class="label">hermes doctor ผ่านจุดสำคัญ</text></g>
+    <g transform="translate(0 170)"><circle cx="26" cy="26" r="24" fill="url(#accent)"/><path d="M15 27l8 8 18-21" stroke="#fff" stroke-width="6" fill="none" stroke-linecap="round" stroke-linejoin="round"/><text x="70" y="35" class="label">hermes chat -q ตอบได้จริง</text></g>
+    <g transform="translate(0 255)"><circle cx="26" cy="26" r="24" fill="url(#accent)"/><path d="M15 27l8 8 18-21" stroke="#fff" stroke-width="6" fill="none" stroke-linecap="round" stroke-linejoin="round"/><text x="70" y="35" class="label">gateway status หรือ test message ผ่าน</text></g>
+  </g>
+</g>
+</svg>
