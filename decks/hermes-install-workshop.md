@@ -35,8 +35,8 @@ layout: section
     </ul>
   </div>
   <div class="de-panel-dark">
-    <h2>Instructor note</h2>
-    <p>อย่าสอนแบบ “ลง command แล้วจบ” ให้สอนเป็นระบบ production habit: install, configure, verify, then operate.</p>
+    <h2>Production habit</h2>
+    <p>ทุกขั้นควรจบด้วย proof: install, configure, verify, แล้วค่อย operate ใน channel ที่ทีมใช้จริง.</p>
   </div>
 </div>
 
@@ -488,15 +488,15 @@ layout: section
     </ul>
   </div>
   <div class="de-panel-dark">
-    <h2>Instructor tip</h2>
-    <p>อย่าขอให้ทุกคนโชว์ API key หรือ config ทั้งไฟล์ ให้ส่งเฉพาะ command output ที่ไม่เปิดเผย secret.</p>
+    <h2>Safe proof</h2>
+    <p>เวลา verify ให้แชร์เฉพาะ command output ที่ไม่เปิดเผย secret ห้ามโชว์ API key หรือ config ทั้งไฟล์.</p>
   </div>
 </div>
 
 ---
 
 <div class="de-slide-header">
-  <div class="de-slide-index">23 · Deployment note</div>
+  <div class="de-slide-index">23 · Publish flow</div>
   <div class="de-kicker">How this deck is published</div>
 </div>
 
