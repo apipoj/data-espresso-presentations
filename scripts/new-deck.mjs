@@ -56,7 +56,7 @@ if (!slug) {
 const title = (flags.title || titleFromSlug(slug)).trim()
 const description = (flags.description || `Presentation about ${title} for Data-Espresso`).trim()
 const purpose = (flags.purpose || `อธิบายเรื่อง ${title} ให้เข้าใจง่ายและเอาไปใช้ต่อได้ทันที`).trim()
-const audience = (flags.audience || 'ทีมธุรกิจ ผู้บริหาร หรือผู้เรียนที่เกี่ยวข้อง').trim()
+const audience = (flags.audience || 'ทีมธุรกิจ ผู้บริหาร หรือคนทำงานที่เกี่ยวข้อง').trim()
 
 const deckPath = join(root, 'decks', `${slug}.md`)
 if (existsSync(deckPath)) {
@@ -97,7 +97,7 @@ layout: section
 
 # ทำไมเรื่องนี้สำคัญ
 
-อธิบายว่าหัวข้อนี้สำคัญกับคนฟังอย่างไร และคาดหวังว่าเขาจะได้อะไรจาก deck นี้
+สรุปว่าหัวข้อนี้สำคัญกับงานจริงอย่างไร และ deck นี้ช่วยตัดสินใจหรือเริ่มลงมือทำอะไรได้บ้าง
 
 ---
 

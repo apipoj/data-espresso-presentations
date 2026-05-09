@@ -23,7 +23,7 @@ layout: section
 
 # Session ที่ดีต้องพาคนจาก “รู้” ไปสู่ “ลอง” และ “ใช้จริง”
 
-ไม่ใช่แค่เล่า concept แต่ต้องทำให้คนฟังเห็นภาพว่าเอากลับไปใช้กับงานตัวเองอย่างไร
+ไม่ใช่แค่เล่า concept แต่ต้องเห็นภาพว่าเอากลับไปใช้กับงานจริงอย่างไร
 
 ---
 
@@ -36,7 +36,7 @@ layout: section
   <div class="de-metric">
     <div class="label">Step 1</div>
     <div class="value">Context</div>
-    <div>ตั้งต้นด้วยปัญหาหรือโอกาสที่ผู้เรียนอินทันที</div>
+    <div>ตั้งต้นด้วยปัญหาหรือโอกาสที่โยงกับงานจริงทันที</div>
   </div>
   <div class="de-metric">
     <div class="label">Step 2</div>
@@ -68,8 +68,8 @@ layout: section
     </ol>
   </div>
   <div class="de-panel-dark">
-    <h2>Facilitator note</h2>
-    <p>ทุก section ควรมีคำถามเดียวที่ตอบชัดว่า “แล้วเอาไปใช้กับงานจริงยังไง”</p>
+    <h2>คำถามหลักของแต่ละ Section</h2>
+    <p>ทุก section ควรตอบให้ชัดว่า “แล้วเอาไปใช้กับงานจริงยังไง”</p>
   </div>
 </div>
 
@@ -83,7 +83,7 @@ layout: section
 <div class="de-panel-dark">
   <div class="label">☕ Workshop Outcome</div>
   <div class="value" style="font-size:2.6rem; margin-top:.8rem;">จากรู้ → ลอง → ใช้จริง</div>
-  <div style="margin-top:1rem; color:rgba(255,255,255,.8)">ให้คนฟังรู้ว่าจบ session แล้วควรกลับไปทำอะไรต่อทันที</div>
+  <div style="margin-top:1rem; color:rgba(255,255,255,.8)">จบ session แล้วรู้ชัดว่าควรกลับไปทำอะไรต่อทันที</div>
 </div>
 
 ---
