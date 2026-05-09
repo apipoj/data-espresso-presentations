@@ -144,7 +144,7 @@ html, body, #slidev {
 .slidev-layout.end::after {
   content: '';
   position: absolute;
-  inset: auto auto 1.2rem 1.5rem;
+  inset: auto auto 1.55rem 1.8rem;
   width: 9rem;
   height: 2px;
   background: var(--de-gradient-accent);
@@ -185,12 +185,13 @@ html, body, #slidev {
   gap: 0.55rem;
   padding: 0.48rem 0.9rem;
   border-radius: 999px;
-  border: 1px solid rgba(255,255,255,0.14);
-  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(48, 30, 69, 0.14);
+  background: rgba(48, 30, 69, 0.06);
   backdrop-filter: blur(10px);
-  box-shadow: inset 0 1px 0 rgba(255,255,255,0.06);
-  color: var(--de-thistle);
+  box-shadow: inset 0 1px 0 rgba(255,255,255,0.5);
+  color: var(--de-russian-violet);
   font-size: 0.78rem;
+  font-weight: 800;
   margin-bottom: 1.15rem;
   letter-spacing: 0.08em;
   text-transform: uppercase;
@@ -349,7 +350,7 @@ html, body, #slidev {
   display: grid;
   grid-template-columns: 1.1fr 0.9fr;
   gap: 1.2rem;
-  align-items: stretch;
+  align-items: start;
 }
 
 .de-list-card {
@@ -445,4 +446,77 @@ html, body, #slidev {
 
 .de-panel-dark li::marker {
   color: var(--de-copper-light);
+}
+
+/* Global overrides for raw HTML inside Slidev markdown decks. */
+.de-visual-full {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.de-visual-card {
+  display: block;
+  width: auto;
+  max-width: 100%;
+  height: 420px;
+  margin-left: auto;
+  margin-right: auto;
+  object-fit: contain;
+  border-radius: 28px;
+  box-shadow: 0 24px 70px rgba(24, 34, 45, 0.15);
+}
+
+.slidev-layout:has(.de-visual-full) {
+  padding: 0;
+}
+
+.slidev-layout pre {
+  font-size: 0.76rem;
+  line-height: 1.5;
+}
+
+.de-command-slide {
+  grid-template-columns: minmax(0, 1.08fr) minmax(0, 0.92fr);
+  gap: 1.1rem;
+}
+
+.de-command-slide > * {
+  min-width: 0;
+}
+
+.de-command-slide .de-list-card,
+.de-command-slide .de-panel-dark {
+  min-height: 12.2rem;
+}
+
+.de-command-slide .de-list-card {
+  overflow: hidden;
+}
+
+.de-command-slide pre {
+  max-width: 100%;
+  overflow-x: auto;
+  white-space: pre;
+}
+
+.de-command-slide .de-panel-dark h2 {
+  font-size: 1.62rem;
+}
+
+.de-command-slide .de-panel-dark ul {
+  padding-left: 1rem;
+}
+
+.de-command-slide .de-panel-dark li {
+  font-size: 0.92rem;
+  line-height: 1.45;
+  overflow-wrap: normal;
+}
+
+.de-architecture-card {
+  height: 400px;
+  margin-top: -0.25rem;
 }

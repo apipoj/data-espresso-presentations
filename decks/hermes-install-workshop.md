@@ -47,7 +47,7 @@ layout: section
   <div class="de-kicker">Architecture</div>
 </div>
 
-<img src="../assets/hermes-local-architecture.svg" class="de-visual-card" alt="Hermes local architecture" />
+<img src="../assets/hermes-local-architecture.svg" class="de-visual-card de-architecture-card" alt="Hermes local architecture" />
 
 ---
 
@@ -84,12 +84,14 @@ layout: section
   <div class="de-kicker">Linux / macOS / WSL2</div>
 </div>
 
-<div class="de-two-up">
+<div class="de-two-up de-command-slide">
   <div class="de-list-card">
     <h2>คำสั่งหลัก</h2>
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/NousResearch/hermes-agent/main/scripts/install.sh | bash
+BASE="https://raw.githubusercontent.com"
+REPO="NousResearch/hermes-agent"
+curl -fsSL "$BASE/$REPO/main/scripts/install.sh" | bash
 ```
 
   </div>
@@ -97,8 +99,8 @@ curl -fsSL https://raw.githubusercontent.com/NousResearch/hermes-agent/main/scri
     <h2>จุดที่ต้องอธิบาย</h2>
     <ul>
       <li>โหลด installer จาก GitHub official repo</li>
-      <li>ติดตั้ง Hermes CLI และ dependency ที่จำเป็น</li>
-      <li>หลัง install ให้ reload shell ก่อนเรียก <code>hermes</code></li>
+      <li>ติดตั้ง Hermes CLI + dependency ที่จำเป็น</li>
+      <li>reload shell ก่อนเรียก <code>hermes</code></li>
     </ul>
   </div>
 </div>
@@ -538,8 +540,12 @@ layout: end
   object-fit: cover;
 }
 .de-visual-card {
-  width: 100%;
-  height: 78%;
+  display: block;
+  width: auto;
+  max-width: 100%;
+  height: 420px;
+  margin-left: auto;
+  margin-right: auto;
   object-fit: contain;
   border-radius: 28px;
   box-shadow: 0 24px 70px rgba(24, 34, 45, 0.15);
@@ -548,7 +554,41 @@ layout: end
   padding: 0;
 }
 .slidev-layout pre {
-  font-size: 0.82rem;
+  font-size: 0.76rem;
   line-height: 1.5;
+}
+.de-command-slide {
+  grid-template-columns: minmax(0, 1.08fr) minmax(0, 0.92fr);
+  gap: 1.1rem;
+}
+.de-command-slide > * {
+  min-width: 0;
+}
+.de-command-slide .de-list-card,
+.de-command-slide .de-panel-dark {
+  min-height: 12.2rem;
+}
+.de-command-slide .de-list-card {
+  overflow: hidden;
+}
+.de-command-slide pre {
+  max-width: 100%;
+  overflow-x: auto;
+  white-space: pre;
+}
+.de-command-slide .de-panel-dark h2 {
+  font-size: 1.62rem;
+}
+.de-command-slide .de-panel-dark ul {
+  padding-left: 1rem;
+}
+.de-command-slide .de-panel-dark li {
+  font-size: 0.92rem;
+  line-height: 1.45;
+  overflow-wrap: normal;
+}
+.de-architecture-card {
+  height: 400px;
+  margin-top: -0.25rem;
 }
 </style>

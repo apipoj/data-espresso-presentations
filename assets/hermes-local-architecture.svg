@@ -18,7 +18,7 @@
     .small{font:600 20px 'Noto Sans Thai',Arial,sans-serif;fill:#f7efe0}
     .mono{font:600 21px ui-monospace,SFMono-Regular,Menlo,monospace;fill:#f8fafc}
     .label{font:800 22px 'Noto Sans Thai',Arial,sans-serif;fill:#301e45}
-    .muted{font:500 17px 'Noto Sans Thai',Arial,sans-serif;fill:#64748b}
+    .muted{font:600 18px 'Noto Sans Thai',Arial,sans-serif;fill:#475569}
   </style>
 </defs>
 <rect width="1200" height="675" rx="36" fill="#fbf8fc"/>
@@ -35,5 +35,5 @@
 <text x="915" y="265" class="label">LLM Provider</text><text x="915" y="306" class="muted">OpenRouter, Codex, Nous</text>
 <text x="125" y="485" class="label">Messaging</text><text x="125" y="526" class="muted">Telegram, Discord, Slack</text>
 <text x="915" y="485" class="label">Tools + MCP</text><text x="915" y="526" class="muted">web, browser, cron, APIs</text>
-<g stroke="#b67b25" stroke-width="7" fill="none" stroke-linecap="round"><path d="M330 280h120"/><path d="M730 280h140"/><path d="M330 500c80 0 100-80 165-125"/><path d="M870 500c-80 0-100-80-165-125"/></g>
+<g stroke="#b67b25" stroke-width="7" fill="none" stroke-linecap="round"><path d="M344 280h106"/><path d="M730 280h126"/><path d="M344 500c72 0 94-78 151-125"/><path d="M856 500c-72 0-94-78-151-125"/></g>
 </svg>

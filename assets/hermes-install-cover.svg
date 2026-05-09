@@ -13,31 +13,34 @@
     <feDropShadow dx="0" dy="18" stdDeviation="18" flood-color="#000" flood-opacity="0.28"/>
   </filter>
   <style>
-    .title{font:800 54px 'Noto Sans Thai',Arial,sans-serif;fill:#fff}
-    .sub{font:600 27px 'Noto Sans Thai',Arial,sans-serif;fill:#eee0ee}
-    .small{font:600 20px 'Noto Sans Thai',Arial,sans-serif;fill:#f7efe0}
-    .mono{font:600 21px ui-monospace,SFMono-Regular,Menlo,monospace;fill:#f8fafc}
+    .title{font:800 56px 'Noto Sans Thai',Arial,sans-serif;fill:#fff}
+    .sub{font:600 29px 'Noto Sans Thai',Arial,sans-serif;fill:#fff4ff}
+    .small{font:800 24px 'Noto Sans Thai',Arial,sans-serif;fill:#ffffff}
+    .mono{font:700 25px ui-monospace,SFMono-Regular,Menlo,monospace;fill:#f8fafc}
     .label{font:800 22px 'Noto Sans Thai',Arial,sans-serif;fill:#301e45}
     .muted{font:500 17px 'Noto Sans Thai',Arial,sans-serif;fill:#64748b}
+    .eyebrow{font:900 19px 'Noto Sans Thai',Arial,sans-serif;letter-spacing:3px;fill:#ffffff}
   </style>
 </defs>
 <rect width="1200" height="675" rx="36" fill="url(#bg)"/>
 <circle cx="970" cy="140" r="170" fill="#c81559" opacity="0.22"/>
 <circle cx="220" cy="520" r="220" fill="#b67b25" opacity="0.16"/>
-<g opacity="0.15" stroke="#fff"><path d="M0 120h1200M0 240h1200M0 360h1200M0 480h1200M180 0v675M360 0v675M540 0v675M720 0v675M900 0v675M1080 0v675"/></g>
+<g opacity="0.10" stroke="#fff"><path d="M0 120h1200M0 240h1200M0 360h1200M0 480h1200M180 0v675M360 0v675M540 0v675M720 0v675M900 0v675M1080 0v675"/></g>
+<rect x="70" y="82" width="278" height="48" rx="24" fill="url(#accent)" opacity="0.96"/>
+<text x="96" y="113" class="eyebrow">DATA-ESPRESSO</text>
 <g filter="url(#shadow)">
-  <rect x="650" y="155" width="410" height="330" rx="26" fill="#0b1220" stroke="rgba(255,255,255,0.16)"/>
-  <circle cx="686" cy="190" r="8" fill="#ff5f57"/><circle cx="714" cy="190" r="8" fill="#febc2e"/><circle cx="742" cy="190" r="8" fill="#28c840"/>
-  <text x="685" y="250" class="mono">$ curl -fsSL ... | bash</text>
-  <text x="685" y="292" class="mono">$ hermes setup</text>
-  <text x="685" y="334" class="mono">$ hermes doctor</text>
-  <rect x="685" y="370" width="300" height="58" rx="14" fill="url(#accent)"/>
-  <text x="710" y="407" class="small">ready for CLI + Gateway</text>
+  <rect x="635" y="145" width="440" height="360" rx="30" fill="#060b16" stroke="rgba(255,255,255,0.24)" stroke-width="2"/>
+  <circle cx="675" cy="184" r="9" fill="#ff5f57"/><circle cx="706" cy="184" r="9" fill="#febc2e"/><circle cx="737" cy="184" r="9" fill="#28c840"/>
+  <text x="675" y="250" class="mono">$ curl -fsSL ... | bash</text>
+  <text x="675" y="296" class="mono">$ hermes setup</text>
+  <text x="675" y="342" class="mono">$ hermes doctor</text>
+  <rect x="675" y="390" width="350" height="64" rx="16" fill="url(#accent)"/>
+  <text x="704" y="431" class="small">ready for CLI + Gateway</text>
 </g>
 <text x="88" y="180" class="title">Hermes Agent</text>
 <text x="88" y="244" class="title">Install Workshop</text>
 <text x="92" y="310" class="sub">ติดตั้ง, ตั้งค่า model, เปิด tools, ต่อ Telegram/Discord</text>
 <text x="92" y="354" class="sub">และ verify ให้พร้อมใช้งานจริงใน 30 นาที</text>
-<rect x="92" y="420" width="390" height="58" rx="29" fill="rgba(255,255,255,0.08)" stroke="rgba(255,255,255,0.14)"/>
-<text x="122" y="457" class="small">Data-Espresso practical AI deck</text>
+<rect x="92" y="420" width="455" height="66" rx="33" fill="rgba(255,255,255,0.12)" stroke="rgba(255,255,255,0.22)" stroke-width="2"/>
+<text x="122" y="462" class="small">Data-Espresso practical AI deck</text>
 </svg>
