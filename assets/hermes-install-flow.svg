@@ -22,7 +22,7 @@
   </style>
 </defs>
 <rect width="1200" height="675" rx="36" fill="#ffffff"/>
-<text x="70" y="88" class="label" style="font-size:44px">Install flow แบบ Arty: ทำแล้วต้องมี proof</text>
+<text x="70" y="88" class="label" style="font-size:44px">Install flow: ทำแล้วต้องมี proof</text>
 <g transform="translate(70 170)">
   <g><circle cx="70" cy="70" r="58" fill="url(#accent)"/><text x="48" y="84" class="title" style="font-size:42px">1</text><text x="0" y="170" class="label">Install</text><text x="0" y="205" class="muted">official installer</text></g>
   <g transform="translate(260 0)"><circle cx="70" cy="70" r="58" fill="#301e45"/><text x="48" y="84" class="title" style="font-size:42px">2</text><text x="0" y="170" class="label">Setup</text><text x="0" y="205" class="muted">เลือกให้เหมาะงาน</text></g>

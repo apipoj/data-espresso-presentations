@@ -43,5 +43,5 @@
 <text x="92" y="344" class="sub">ตั้ง model, เปิด tools, ต่อ gateway</text>
 <text x="92" y="384" class="sub">จบด้วย proof ว่าใช้ได้จริง</text>
 <rect x="92" y="430" width="455" height="66" rx="33" fill="rgba(255,255,255,0.12)" stroke="rgba(255,255,255,0.22)" stroke-width="2"/>
-<text x="122" y="472" class="small">Arty practical AI workshop deck</text>
+<text x="122" y="472" class="small">Practical AI operating deck</text>
 </svg>

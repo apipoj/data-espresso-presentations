@@ -1,7 +1,7 @@
 ---
 theme: ../theme/data-espresso-theme
-title: "ติดตั้ง Hermes Agent แบบใช้สอนและใช้จริง"
-info: "Workshop deck สอนติดตั้ง Hermes Agent ด้วย Arty voice: CLI, provider, tools, memory, skills, gateway, verification"
+title: "ติดตั้ง Hermes Agent ให้ใช้งานจริง"
+info: "Workshop deck ติดตั้ง Hermes Agent ด้วย Arty voice: CLI, provider, tools, memory, skills, gateway, verification"
 layout: cover
 background: '#101010'
 ---
@@ -14,18 +14,18 @@ layout: section
 
 # เป้าหมายของ session
 
-ไม่ใช่แค่ติดตั้งให้ผ่าน แต่ทำให้ทุกคนมี Hermes ที่พิสูจน์ได้ว่าใช้งานจริง
+ติดตั้ง Hermes ให้จบแบบมีหลักฐาน ไม่ใช่แค่เปิดโปรแกรมขึ้นมาได้
 
 ---
 
 <div class="de-slide-header">
-  <div class="de-slide-index">01 · What learners will build</div>
+  <div class="de-slide-index">01 · สิ่งที่คุณจะทำได้</div>
   <div class="de-kicker">Outcome first</div>
 </div>
 
 <div class="de-two-up">
   <div class="de-list-card">
-    <h2>หลังจบต้องทำได้จริง</h2>
+    <h2>หลังจบ session นี้ ต้องทำได้จริง</h2>
     <ul>
       <li>ติดตั้ง Hermes บน macOS, Linux, หรือ WSL2 ได้เอง</li>
       <li>ตั้งค่า provider/model ผ่าน <code>hermes setup</code> โดยไม่เดา</li>
@@ -35,8 +35,8 @@ layout: section
     </ul>
   </div>
   <div class="de-panel-dark">
-    <h2>Arty rule</h2>
-    <p>อย่าสอนให้จำ command อย่างเดียวครับ สอนให้ทุก step มี proof: install → configure → verify → ค่อยเอาไปใช้ในงานจริง.</p>
+    <h2>หลักคิดหลัก</h2>
+    <p>อย่าจำ command อย่างเดียวครับ ทุก step ต้องมี proof: install → configure → verify → ค่อยเอาไปใช้กับงานจริง.</p>
   </div>
 </div>
 
@@ -86,7 +86,7 @@ layout: section
 
 <div class="de-two-up de-command-slide">
   <div class="de-list-card">
-    <h2>คำสั่งหลักที่ต้องกล้ารัน</h2>
+    <h2>คำสั่งหลักสำหรับติดตั้ง</h2>
 
 ```bash
 BASE="https://raw.githubusercontent.com"
@@ -96,11 +96,11 @@ curl -fsSL "$BASE/$REPO/main/scripts/install.sh" | bash
 
   </div>
   <div class="de-panel-dark">
-    <h2>อย่าให้ผู้เรียน copy แบบหลับตา</h2>
+    <h2>อย่า copy แบบหลับตา</h2>
     <ul>
-      <li>ชี้ให้เห็นว่าโหลดจาก GitHub official repo</li>
-      <li>อธิบายว่า installer วาง CLI + dependency ให้</li>
-      <li>จบด้วย reload shell แล้วเช็ก <code>hermes --version</code></li>
+      <li>ยืนยันว่าโหลดจาก GitHub official repo</li>
+      <li>เข้าใจว่า installer วาง CLI + dependency ให้</li>
+      <li>reload shell แล้วเช็ก <code>hermes --version</code> ทันที</li>
     </ul>
   </div>
 </div>
@@ -449,7 +449,7 @@ layout: section
 
 # Workshop exercise
 
-ให้ผู้เรียนลงมือทำและส่ง proof กลับมา ไม่ใช่นั่งดู demo แล้วพยักหน้า
+ลงมือทำจริง แล้วส่ง proof กลับมา ไม่ใช่แค่นั่งดู demo แล้วพยักหน้า
 
 ---
 
@@ -473,13 +473,13 @@ layout: section
 ---
 
 <div class="de-slide-header">
-  <div class="de-slide-index">22 · Proof submission</div>
-  <div class="de-kicker">What learners send back</div>
+  <div class="de-slide-index">22 · ส่ง proof ให้ครบ</div>
+  <div class="de-kicker">Evidence pack</div>
 </div>
 
 <div class="de-two-up">
   <div class="de-list-card">
-    <h2>ขอ proof 4 อย่าง</h2>
+    <h2>ส่ง proof 4 อย่าง</h2>
     <ul>
       <li><code>hermes --version</code></li>
       <li><code>hermes doctor</code> จุดสำคัญผ่าน</li>
@@ -512,7 +512,7 @@ layout: section
   </div>
   <div class="de-panel-dark">
     <h2>Why static</h2>
-    <p>สำหรับ slide ที่ใช้สอนหรือส่งลูกค้า static mode ปลอดภัยกว่า dev/editor mode เพราะไม่มี write endpoint เปิด public.</p>
+    <p>สำหรับ deck ที่แชร์ให้ทีมหรือลูกค้า static mode ปลอดภัยกว่า dev/editor mode เพราะไม่มี write endpoint เปิด public.</p>
   </div>
 </div>
 
@@ -522,7 +522,7 @@ layout: end
 
 # Key takeaway
 
-ติดตั้ง Hermes สำเร็จ ไม่ใช่แค่พิมพ์ <code>hermes</code> แล้วขึ้นครับ ต้องมี proof ว่า agent คิดได้, ใช้ tools ได้, และอยู่ใน channel ที่ทีมใช้งานจริงได้อย่างปลอดภัย
+ติดตั้ง Hermes สำเร็จ ไม่ใช่แค่พิมพ์ <code>hermes</code> แล้วขึ้นครับ ต้องมี proof ว่า agent ตอบได้, ใช้ tools ได้, และอยู่ใน channel ที่ทีมใช้งานจริงได้อย่างปลอดภัย
 
 <div class="de-hero-meta">
   <div class="de-chip">Install</div>
