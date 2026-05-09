@@ -74,7 +74,7 @@ const html = `<!doctype html>
     .hero {
       background: var(--gradient-dark);
       color: white;
-      padding: 72px 24px 84px;
+      padding: 72px 24px 104px;
       position: relative;
       overflow: hidden;
     }
@@ -106,9 +106,11 @@ const html = `<!doctype html>
     }
     h1 {
       margin: 0;
-      font-size: clamp(2.8rem, 7vw, 5.5rem);
-      line-height: 0.95;
-      max-width: 900px;
+      font-size: clamp(2.35rem, 6vw, 5rem);
+      line-height: 1.14;
+      max-width: 920px;
+      letter-spacing: -0.02em;
+      text-wrap: balance;
     }
     .hero h1 .accent {
       background: var(--gradient-accent);
@@ -185,6 +187,26 @@ const html = `<!doctype html>
       padding: 2px 8px;
       border-radius: 999px;
       font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+    }
+    @media (max-width: 640px) {
+      .hero {
+        padding: 48px 18px 88px;
+      }
+      h1 {
+        font-size: clamp(2.15rem, 11vw, 3.25rem);
+        line-height: 1.2;
+        letter-spacing: -0.01em;
+      }
+      .hero p {
+        font-size: 1rem;
+        line-height: 1.75;
+      }
+      .grid {
+        grid-template-columns: 1fr;
+      }
+      .card {
+        padding: 22px;
+      }
     }
   </style>
 </head>
